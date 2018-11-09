@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <PreferenceCategory android:title="Datos">
+
+        <EditTextPreference
+            android:key="nom"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre" />
+        <EditTextPreference
+            android:key="user"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Nombre de Usuario" />
+        <EditTextPreference
+            android:key="fecha"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Fecha de nacimiento" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/genero"
+            android:entryValues="@array/genero"
+            android:key="genero"
+            android:title="Genero" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="educacion.trax.acbproyectoandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsClass"
+            android:label="Settings" />
+        <activity android:name=".Estudiante" />
+        <activity android:name=".Profesor" />
+        <activity android:name=".Busquedas" />
+        <activity android:name=".AllAlum" />
+        <activity android:name=".CicloAllum" />
+        <activity android:name=".CursoAllum" />
+        <activity android:name=".AllProf" />
+        <activity android:name=".todos" />
+        <activity android:name=".Asignaturas" />
+        <activity android:name=".newAsignatura" />
+        <activity android:name=".buscarAsignatura"></activity>
+    </application>
+
+</manifest>
